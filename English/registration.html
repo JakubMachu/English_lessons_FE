@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .navbar {
+        margin-bottom: 0;
+        background-color: #f4511e;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+      }
+
+      .navbar li a,
+      .navbar .navbar-brand {
+        color: #fff !important;
+      }
+      .navbar-nav li a:hover,
+      .navbar-nav li.active a {
+        color: #f4511e !important;
+        background-color: #fff !important;
+      }
+
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+      }
+      .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .registration-form {
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #4caf50;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"></div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="passwordreset.html">NEW PASSWORD</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container1">
+      <form action="/register" method="post" class="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Surname:</label>
+        <input type="text" id="surname" name="surname" required />
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="password">Password confirm</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>
